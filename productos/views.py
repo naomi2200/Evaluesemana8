@@ -5,6 +5,7 @@ from .serializers import ProductoSerializer, ProveedorSerializer
 
 class ProductoViewSet(viewsets.ModelViewSet):
     queryset = Producto.objects.all()
+
     serializer_class = ProductoSerializer
     filter_backends = [filters.SearchFilter]
     search_fields = ['nombre']
