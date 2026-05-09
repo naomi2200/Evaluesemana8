@@ -44,8 +44,7 @@ Este proyecto es una API RESTful desarrollada con Django y Django REST Framework
 **Listar productos:**
 
 curl -X GET http://localhost:8000/api/productos/
-![GET](listado_productos.png)
-
+![GET](docs/listado_producto.png)
 **Crear producto:**
 
 curl -X POST http://localhost:8000/api/productos/ 
@@ -56,18 +55,19 @@ curl -X GET "http://localhost:8000/api/productos/?search=Laptop"
 
 **editar_producto**
 ![PATCH](docs/editar_producto-id.png)
-**Relacion entidad2 con entidad1
-![GET](ddocs/relacion_producto.png)
+**Relacion entidad2 con entidad1**
+curl -X GET http://localhost:8000/api/productos/1/
+![GET](docs/relacion_producto.png)
 
-Relacion de proveedor yproducto
-![GET](rdocs/relacion_producto.png)
-eliminar produto con id :1
+**eliminar produto con id :1**
+curl -X DELETE http://localhost:8000/api/productos/1/
 ![DELETE](docs/eliminar_producto.png)
+
 
 **Listar proveedores:**
 
 curl -X GET http://localhost:8000/api/proveedores/
-![GET](docs/listado_proveedor.png  )
+![GET](docs/listado_proveedor.png)
 
 **Crear proveedor:**
 curl -X POST http://localhost:8000/api/proveedores/ 
@@ -75,7 +75,7 @@ curl -X POST http://localhost:8000/api/proveedores/
 **Usando PATCH**
 ![PATCH](docs/editar_proveedor..png)
 **Eliminando**
-![DELETE](/docs/eliminar_proveedor.png)
+![DELETE](docs/eliminar_proveedor.png)
 ### Tabla de funcionalidades
 
 
