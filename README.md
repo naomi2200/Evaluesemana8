@@ -98,9 +98,6 @@ curl -X POST http://localhost:8000/api/proveedores/
 python manage.py makemigrations productos
 python manage.py migrate
 
-# Crear superusuario
-python manage.py createsuperuser
-
 # Correr el servidor
 python manage.py runserver
 
@@ -122,23 +119,6 @@ prod2 = Producto.objects.create(nombre="Mouse", precio=50.00, stock=100, proveed
 	```bash
 	git init
 	git remote add origin https://github.com/usuario/tu-repo.git
-	```
-2. Agrega todos los archivos nuevos y cambios:
-	```bash
-	git add .
-	```
-3. Realiza commits progresivos:
-	```bash
-	git commit -m "Crear app productos y modelos base"
-	git commit -am "Serializers y vistas para productos y proveedores"
-	git commit -am "Configurar rutas y endpoints en urls.py"
-	git commit -am "Actualizar settings.py y archivos de configuración"
-	git commit -am "Actualizar README.md y requirements.txt"
-	# (Agrega más commits según avances y cambios)
-	```
-4. Sube los cambios a GitHub:
-	```bash
-	git push -u origin main
 	```
 
 **LINK DE PRUEBA IMPORTANTE!!!**
