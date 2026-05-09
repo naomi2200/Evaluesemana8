@@ -3,8 +3,8 @@
 Este proyecto es una API RESTful desarrollada con Django y Django REST Framework para la gestión de productos y proveedores en una tienda online.
 
 ### Tecnologías utilizadas
-- Python 3.x
-- Django 4.2
+- Python 3.13.3
+- Django 6.0.3
 - Django REST Framework
 
 ### Instalación y ejecución
