@@ -17,9 +17,8 @@ from productos.views import ProductoViewSet, ProveedorViewSet
 # Router de DRF
 router = DefaultRouter()
 router.register(r'productos', ProductoViewSet)
+
 router.register(r'proveedores', ProveedorViewSet)
-
-
 # URLs principales
 urlpatterns = [
     path('admin/', admin.site.urls),
