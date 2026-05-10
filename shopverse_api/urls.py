@@ -10,13 +10,14 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-from rutas.views import RutaViewSet, ConductorViewSet
+from productos.views import ProductoViewSet, ProveedorViewSet
+
 
 
 # Router de DRF
 router = DefaultRouter()
-router.register(r'rutas', RutaViewSet)
-router.register(r'conductores', ConductorViewSet)
+router.register(r'productos', ProductoViewSet)
+router.register(r'proveedores', ProveedorViewSet)
 
 
 # URLs principales
