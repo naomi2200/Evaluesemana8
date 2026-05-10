@@ -44,7 +44,7 @@ Este proyecto es una API RESTful desarrollada con Django y Django REST Framework
 **Listar productos:**
 
 curl -X GET http://localhost:8000/api/productos/
-![alt text](listado_productos.png)
+![GET](listado_productos.png)
 
 **Crear producto:**
 
@@ -52,17 +52,17 @@ curl -X POST http://localhost:8000/api/productos/
 ![POST](docs/crear_producto.png )
 **Buscar productos por nombre:**
 curl -X GET "http://localhost:8000/api/productos/?search=Laptop"
-![alt text](docs/busqueda_producto.png)
+![GET](docs/busqueda_producto.png)
 
 **editar_producto**
-![alt text](docs/editar_producto-id.png)
+![PATCH](docs/editar_producto-id.png)
 **Relacion entidad2 con entidad1
-![alt text](ddocs/relacion_producto.png)
+![GET](ddocs/relacion_producto.png)
 
 Relacion de proveedor yproducto
-![alt text](rdocs/elacion_producto.png)
+![GET](rdocs/relacion_producto.png)
 eliminar produto con id :1
-![alt text](docs/eliminar_producto.png)
+![DELETE](docs/eliminar_producto.png)
 
 **Listar proveedores:**
 
@@ -141,7 +141,8 @@ prod2 = Producto.objects.create(nombre="Mouse", precio=50.00, stock=100, proveed
 	git push -u origin main
 	```
 
----
+**LINK DE PRUEBA IMPORTANTE!!!**
+https://youtu.be/wAaae3XE4bg
 
 **Recuerda:**
 - Reemplaza los archivos antiguos por los nuevos.
